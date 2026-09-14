@@ -4286,3 +4286,25 @@ body {
 .player-position {
     display: none !important;
 }
+/* =====================================================
+   AJUSTES DA VERSÃO EM REACT (JSX + SCSS)
+===================================================== */
+
+.mt-empty-elenco {
+  font-family: "Rajdhani", sans-serif;
+  color: #8fb6e6;
+  font-size: 15px;
+  text-align: center;
+  padding: 18px;
+  line-height: 1.4;
+}
+
+.mt-field-position-ativa .mt-field-player {
+  outline: 2px solid #0a84ff;
+  box-shadow: 0 0 18px rgba(10, 132, 255, 0.7);
+}
+
+.botao-roleta:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
