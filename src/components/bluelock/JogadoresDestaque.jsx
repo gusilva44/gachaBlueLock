@@ -37,7 +37,7 @@ const jogadores = [
 ];
 
 /** As classes originais eram numeradas (card-jogador, card-jogador1, ...). */
-const sufixo = (indice: number) => (indice === 0 ? "" : String(indice));
+const sufixo = (indice) => (indice === 0 ? "" : String(indice));
 
 export function JogadoresDestaque() {
   return (

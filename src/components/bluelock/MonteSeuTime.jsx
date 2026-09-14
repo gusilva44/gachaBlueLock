@@ -1,19 +1,13 @@
 import { useMemo, useState } from "react";
 
 import { useBlueLock } from "@/context/BlueLockContext";
-import type { Personagem } from "@/data/personagens";
-import {
-  calcularTime,
-  imagemUrl,
-  jogadorPodeJogar,
-  SLOTS,
-  type SlotId,
-} from "@/lib/bluelock/utils";
+
+import { calcularTime, imagemUrl, jogadorPodeJogar, SLOTS } from "@/lib/bluelock/utils";
 
 const LIMITE_JOGADORES = 6;
 
 const filtros = [
-  { id: "todos", rotulo: "TODOS", posicoes: [] as string[] },
+  { id: "todos", rotulo: "TODOS", posicoes: [] },
   { id: "ataque", rotulo: "ATAQUE", posicoes: ["ST", "FW", "LW", "RW"] },
   { id: "meio", rotulo: "MEIO", posicoes: ["CAM", "CM", "MF"] },
   { id: "defesa", rotulo: "DEFESA", posicoes: ["LB", "CB", "RB", "DF"] },
@@ -37,11 +31,9 @@ export function MonteSeuTime() {
       const combinaBusca = jogador.nome.toLowerCase().includes(busca.trim().toLowerCase());
 
       const combinaFiltro =
-        posicoesFiltro.length === 0 ||
-        jogador.posicoes.some((pos) => posicoesFiltro.includes(pos));
+        posicoesFiltro.length === 0 || jogador.posicoes.some((pos) => posicoesFiltro.includes(pos));
 
-      const combinaSlot =
-        !slotSelecionado || jogadorPodeJogar(jogador, slotSelecionado.posicao);
+      const combinaSlot = !slotSelecionado || jogadorPodeJogar(jogador, slotSelecionado.posicao);
 
       return combinaBusca && combinaFiltro && combinaSlot;
     });
@@ -51,7 +43,7 @@ export function MonteSeuTime() {
     ? jogadoresFiltrados
     : jogadoresFiltrados.slice(0, LIMITE_JOGADORES);
 
-  const escolherSlot = (slot: SlotId, posicao: string) => {
+  const escolherSlot = (slot, posicao) => {
     selecionarSlot(slot, posicao);
     setMostrandoTodos(true);
   };
@@ -105,7 +97,7 @@ export function MonteSeuTime() {
                 Role a roleta em DIAMANTES BRUTOS para ganhar jogadores.
               </p>
             ) : (
-              visiveis.map((jogador: Personagem) => (
+              visiveis.map((jogador) => (
                 <article
                   className={`player-card${slotSelecionado ? " jogador-selecionavel" : ""}`}
                   key={jogador.id}

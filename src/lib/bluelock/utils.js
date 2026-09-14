@@ -1,8 +1,7 @@
-import type { Personagem, Raridade } from "@/data/personagens";
 import { personagens } from "@/data/personagens";
 
 /** Imagens locais ficam em /public/images. URLs completas passam direto. */
-export function imagemUrl(nome: string): string {
+export function imagemUrl(nome) {
   if (!nome) return "";
   return /^https?:\/\//.test(nome) ? nome : `/images/${nome}`;
 }
@@ -15,7 +14,7 @@ export const CHAVE_DIAMANTES = "diamantes";
 export const CHAVE_ELENCO = "blueLockJogadoresObtidos";
 export const CHAVE_ESCALACAO = "blueLockEscalacao";
 
-export function sortearRaridade(): Raridade {
+export function sortearRaridade() {
   const numero = Math.random() * 100;
   if (numero <= 30) return "Comum";
   if (numero <= 55) return "Raro";
@@ -24,19 +23,19 @@ export function sortearRaridade(): Raridade {
   return "New Gen";
 }
 
-export function sortearPersonagem(): Personagem {
+export function sortearPersonagem() {
   const raridade = sortearRaridade();
   const disponiveis = personagens.filter((p) => p.raridade === raridade);
   const lista = disponiveis.length > 0 ? disponiveis : personagens;
-  return lista[Math.floor(Math.random() * lista.length)]!;
+  return lista[Math.floor(Math.random() * lista.length)];
 }
 
-export function sortearDezPersonagens(): Personagem[] {
+export function sortearDezPersonagens() {
   return Array.from({ length: 10 }, () => sortearPersonagem());
 }
 
-export function esperar(tempo: number) {
-  return new Promise<void>((resolve) => setTimeout(resolve, tempo));
+export function esperar(tempo) {
+  return new Promise((resolve) => setTimeout(resolve, tempo));
 }
 
 export const SLOTS = [
@@ -51,18 +50,15 @@ export const SLOTS = [
   { id: "CB_DIR", posicao: "CB", classe: "mt-position-cb-right" },
   { id: "RB", posicao: "RB", classe: "mt-position-rb" },
   { id: "GK", posicao: "GK", classe: "mt-position-gk" },
-] as const;
+];
 
-export type SlotId = (typeof SLOTS)[number]["id"];
-export type Escalacao = Record<SlotId, Personagem | null>;
-
-export const escalacaoVazia = (): Escalacao =>
+export const escalacaoVazia = () =>
   SLOTS.reduce((acc, slot) => {
     acc[slot.id] = null;
     return acc;
-  }, {} as Escalacao);
+  }, {});
 
-const compatibilidade: Record<string, string[]> = {
+const compatibilidade = {
   ST: ["ST", "FW"],
   LW: ["LW", "FW"],
   RW: ["RW", "FW"],
@@ -74,18 +70,18 @@ const compatibilidade: Record<string, string[]> = {
   GK: ["GK"],
 };
 
-export function jogadorPodeJogar(personagem: Personagem | null, posicao: string) {
+export function jogadorPodeJogar(personagem, posicao) {
   if (!personagem || !Array.isArray(personagem.posicoes)) return false;
   const aceitas = compatibilidade[posicao] ?? [];
   return personagem.posicoes.some((pos) => aceitas.includes(pos));
 }
 
-export function classeRaridade(raridade: string) {
+export function classeRaridade(raridade) {
   return raridade.toLowerCase().replaceAll(" ", "-");
 }
 
-export function calcularTime(escalacao: Escalacao) {
-  const titulares = Object.values(escalacao).filter(Boolean) as Personagem[];
+export function calcularTime(escalacao) {
+  const titulares = Object.values(escalacao).filter(Boolean);
 
   if (titulares.length === 0) {
     return {
@@ -101,7 +97,7 @@ export function calcularTime(escalacao: Escalacao) {
     };
   }
 
-  const media = (valores: number[]) =>
+  const media = (valores) =>
     Math.round(valores.reduce((total, valor) => total + valor, 0) / valores.length);
 
   const overall = media(titulares.map((j) => j.overall));

@@ -1,14 +1,5 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
-import type { Personagem } from "@/data/personagens";
 import {
   CHAVE_DIAMANTES,
   CHAVE_ELENCO,
@@ -17,33 +8,15 @@ import {
   escalacaoVazia,
   jogadorPodeJogar,
   SLOTS,
-  type Escalacao,
-  type SlotId,
 } from "@/lib/bluelock/utils";
 
-type BlueLockContextValor = {
-  diamantes: number;
-  elenco: Personagem[];
-  escalacao: Escalacao;
-  slotSelecionado: { slot: SlotId; posicao: string } | null;
-  gastarDiamantes: (custo: number) => boolean;
-  adicionarAoElenco: (personagem: Personagem) => void;
-  selecionarSlot: (slot: SlotId, posicao: string) => void;
-  colocarNoTime: (jogador: Personagem) => void;
-  limparEscalacao: () => void;
-  removerDoSlot: (slot: SlotId) => void;
-};
+const BlueLockContext = createContext(null);
 
-const BlueLockContext = createContext<BlueLockContextValor | null>(null);
-
-export function BlueLockProvider({ children }: { children: ReactNode }) {
+export function BlueLockProvider({ children }) {
   const [diamantes, setDiamantes] = useState(DIAMANTES_INICIAIS);
-  const [elenco, setElenco] = useState<Personagem[]>([]);
-  const [escalacao, setEscalacao] = useState<Escalacao>(escalacaoVazia);
-  const [slotSelecionado, setSlotSelecionado] = useState<{
-    slot: SlotId;
-    posicao: string;
-  } | null>(null);
+  const [elenco, setElenco] = useState([]);
+  const [escalacao, setEscalacao] = useState(escalacaoVazia);
+  const [slotSelecionado, setSlotSelecionado] = useState(null);
   const [carregado, setCarregado] = useState(false);
 
   // Carrega o estado salvo no navegador (só depois da hidratação).
@@ -91,11 +64,9 @@ export function BlueLockProvider({ children }: { children: ReactNode }) {
   }, [escalacao, carregado]);
 
   const gastarDiamantes = useCallback(
-    (custo: number) => {
+    (custo) => {
       if (diamantes < custo) {
-        alert(
-          `Você não possui diamantes suficientes!\nDiamantes: ${diamantes}\nCusto: ${custo}`,
-        );
+        alert(`Você não possui diamantes suficientes!\nDiamantes: ${diamantes}\nCusto: ${custo}`);
         return false;
       }
       setDiamantes((atual) => atual - custo);
@@ -104,18 +75,18 @@ export function BlueLockProvider({ children }: { children: ReactNode }) {
     [diamantes],
   );
 
-  const adicionarAoElenco = useCallback((personagem: Personagem) => {
+  const adicionarAoElenco = useCallback((personagem) => {
     setElenco((atual) =>
       atual.some((jogador) => jogador.id === personagem.id) ? atual : [...atual, personagem],
     );
   }, []);
 
-  const selecionarSlot = useCallback((slot: SlotId, posicao: string) => {
+  const selecionarSlot = useCallback((slot, posicao) => {
     setSlotSelecionado({ slot, posicao });
   }, []);
 
   const colocarNoTime = useCallback(
-    (jogador: Personagem) => {
+    (jogador) => {
       if (!slotSelecionado) {
         alert("Primeiro escolha uma posição no campo.");
         return;
@@ -137,7 +108,7 @@ export function BlueLockProvider({ children }: { children: ReactNode }) {
     [escalacao, slotSelecionado],
   );
 
-  const removerDoSlot = useCallback((slot: SlotId) => {
+  const removerDoSlot = useCallback((slot) => {
     setEscalacao((atual) => ({ ...atual, [slot]: null }));
   }, []);
 
