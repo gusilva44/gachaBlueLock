@@ -1,0 +1,4310 @@
+body{
+background-color: #0B0F19;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Logo{
+width: 200px;
+height: 80px;
+}
+
+.Inicial{
+display: flex;
+align-items: center;
+background-color: #0B0F19;
+
+
+}
+
+
+.FDP {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 28px;
+}
+
+.A{
+
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    color: #0A84FF;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .3s;
+}
+     
+
+.A:hover{
+    color: #66B2FF;
+}
+
+.btn-nav{
+    background: #0A84FF;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.btn-nav:hover{
+    background: #2B96FF;
+    color: white;
+}
+
+
+
+
+
+
+.fundo{
+background-image: url(https://images6.alphacoders.com/131/1319754.jpeg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 85vh;
+position: relative;
+}
+
+.TITULO{
+width: 500px;
+position: absolute;
+top: 50%;
+left: 7%;
+}
+
+.SUBTITULO{
+position: absolute;
+top: 60%;
+left: 12%;
+font-size: 30px;
+color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-text-stroke: 1px #0A1F44;
+}
+
+
+
+.botao{
+display: inline-block;
+padding: 15px 35px;
+background-color: #007BFF;
+color: white;
+text-decoration: none;
+font-size: 20px;
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+border-radius: 10px;
+transition: 0.3s;
+position: absolute;
+top: 70%;
+left: 14%;
+}
+
+.botao:hover{
+background-color: #0056b3;
+transform: scale(1.05);
+box-shadow: 
+0 10px 25px rgba(0, 0, 0, 25),
+0 0 20px rgba(140, 120, 255, .6);
+}
+
+
+.Projeto{
+background-image: url("/images/Fundo Blue Lock.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 95vh;
+position: relative;
+}
+
+.Rokku{
+ font-size: 20px;
+ color: #006BFF;
+ position: absolute;
+left: 5%;
+bottom: 87%;
+  line-height: .9;
+  letter-spacing: 3px;
+  transform: rotate(-2deg);
+}
+
+.TITULO2{
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 95px;
+  color: #FFFFFF;
+  position: absolute;
+  line-height: .9;
+  letter-spacing: 3px;
+  transform: rotate(-2deg);
+  left: 5%;
+  bottom: 60%;
+}
+
+.b1{
+font-size: 115px;
+color: #006BFF;
+text-shadow:
+0 0 100px #006BFF,
+0 0 20px #006BFF;
+}
+
+.explicação{
+color: #FFFFFF;
+font-family: "Poppins", sans-serif;
+font-weight: 100;
+font-style: normal;
+font-size: 18px;
+position: absolute;
+  bottom: 59%;
+    left: 3%;
+}
+
+.explicaçãoo{
+color: #FFFFFF;
+font-family: "Poppins", sans-serif;
+font-weight: 100;
+font-style: normal;
+font-size: 18px;
+position: absolute;
+  bottom: 52%;
+    left: 3%;
+}
+
+.conhecer{
+background-color: #0B0F19;
+color: #FFFFFF;
+text-decoration: none;
+border: solid 1px #1977FF;
+border-radius: 8px;
+padding: 16px 40px;
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  position: absolute;
+    bottom: 45%;
+    left: 14%;
+}
+
+.conhecer:hover{
+background-color: #0056b3;
+transform: scale(1.05);
+box-shadow: 
+0 10px 25px rgba(0, 0, 0, 25),
+0 0 20px rgba(140, 120, 255, .6);
+}
+
+.Destaque{
+position: absolute;
+bottom: 28%;
+left: 38%;
+color: #FFFFFF;
+font-size: 27px;
+ font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing:3px;
+}
+
+.b2{
+color: #006BFF;
+}
+
+.b3{
+font-size: 20px;
+}
+
+.cards{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    min-height: 155vh;
+}
+
+.cartas{
+    width: 200px;
+    height: 180px;
+
+    background: #0B1120;
+    border: 2px solid #0E4BFF;
+    border-radius: 15px;
+
+    padding: 15px;
+    text-align: center;
+
+    transition: .3s;
+    box-shadow: 0 0 15px rgba(0,110,255,.15);
+    
+}
+
+.cartas:hover{
+    transform: translateY(-6px);
+    border-color: #2D8CFF;
+    box-shadow: 0 0 20px rgba(0,110,255,.45);
+}
+
+.cartas img{
+    width: 40px;
+    margin-bottom: 8px;
+     background-color: #006BFF;
+    font-size: 38px;
+    text-shadow: 0 0 30px #006BFF;
+    border-radius: 10px;
+}
+
+.cartas img:hover{
+background-color: #3A8DFF;
+}
+
+.cartas h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+    color: #006BFF;
+    margin: 0;
+}
+
+.cartas h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.cartas p{
+    margin-top: 8px;
+    font-family: "Poppins", sans-serif;
+    color: #D8D8D8;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+.Jogadores{
+background-image: url("/images/fundoAzul.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px ;
+}
+
+.TITULO3{
+font-family: "Bebas Neue", sans-serif;
+font-weight: 100;
+font-size: 65px;
+color: #FFFFFF;
+position: absolute;
+bottom: 85%;
+left: 36%;
+ margin: 0;
+font-weight: 800;
+}
+
+.TITULO3 strong{
+
+    color: #006BFF;
+    text-shadow:
+    0 0 8px rgba(0, 107, 255, 0.7),
+    0 0 18px rgba(0, 107, 255, 0.3);
+
+}
+
+
+
+.card-jogador{
+
+            position: relative;
+
+            width: 280px;
+            height: 470px;
+
+            padding: 15px;
+
+            background: #070D16;
+
+            border: 2px solid #006BFF;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(0, 107, 255, 0.20);
+
+            transition: 0.3s ease;
+        }
+
+        .card-jogador:hover{
+
+            transform: translateY(-8px);
+
+            border-color: #2D8CFF;
+
+            box-shadow:
+                0 0 15px rgba(0, 107, 255, 0.5),
+                0 0 35px rgba(0, 107, 255, 0.2);
+        }
+
+    .numero{
+    position: absolute;
+
+    top: 12px;
+    left: 18px;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero span{
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #006BFF;
+
+    line-height: 0.85;
+
+    text-shadow: 0 0 10px rgba(0, 107, 255, 0.7);
+}
+
+.numero small{
+    margin-top: 3px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #AAB4C3;
+
+    line-height: 1;
+}
+
+        .foto-jogador{
+
+          width: 240px;
+    height: 250px;
+
+    margin-top: 25px;
+
+            overflow: hidden;
+
+            border-radius: 45px 45px 25px 25px;
+
+            background: #111827;
+        }
+
+
+        .foto-jogador img{
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s ease;
+        }
+
+        .card-jogador:hover .foto-jogador img{
+
+            transform: scale(1.05);
+        }
+
+        .card-jogador h2{
+          margin-top: 10px;
+
+          margin-bottom: 15px;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: 1px;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        .informacoes{
+
+            display: flex;
+            
+            height: 42px;
+
+            border: 1px solid #006BFF;
+
+            border-radius: 6px;
+
+            overflow: hidden;        
+
+            transition: 0.3s ease;
+        }
+
+        .posicaooo{
+
+            width: 65px;
+            
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #006BFF;
+
+            color: white;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+        }
+
+        .rank{
+
+            width: 105px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #080E1C;
+
+            color: #FFFFFF;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: 1px;
+        }
+
+        .card-jogador:hover .informacoes{
+
+            box-shadow:
+                 0 0 10px rgba(0, 184, 217, 0.35),
+    0 0 25px rgba(0, 184, 217, 0.2);
+        }
+
+        .botao-perfil{
+
+            width: 120px;
+            height: 35px;
+
+            margin-top: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #006BFF;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 20px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+        .botao-perfil:hover{
+
+            background: #2D8CFF;
+
+            transform: scale(1.05);
+
+            box-shadow:
+                0 0 15px #006BFF,
+                0 0 30px rgba(0, 107, 255, 0.4);
+        }
+
+        .card-jogador1::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            background: #006BFF;
+
+            opacity: 0.04;
+
+            border-radius: 50%;
+
+            top: 100px;
+            right: -100px;
+
+            filter: blur(20px);
+
+            pointer-events: none;
+        }
+
+.card-jogador1{
+
+            position: relative;
+
+            width: 280px;
+            height: 470px;
+
+            padding: 15px;
+
+            background: #17150A;
+
+            border: 2px solid #FFD21F;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(0, 107, 255, 0.20);
+
+            transition: 0.3s ease;
+        }
+
+        .card-jogador1:hover{
+
+            transform: translateY(-8px);
+
+            border-color: #FFB800;
+
+            box-shadow:
+                0 0 12px rgba(255, 210, 31, 0.5),
+        0 0 30px rgba(255, 138, 0, 0.3);
+        }
+
+    .numero1{
+    position: absolute;
+
+    top: 12px;
+    left: 18px;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero1 span{
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #AAB4C3;
+
+    line-height: 0.85;
+
+    text-shadow: 0 0 10px rgba(180, 164, 19, 0.7);
+}
+
+.numero1 small{
+    margin-top: 3px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #AAB4C3;
+
+    line-height: 1;
+}
+
+        .foto-jogador1{
+
+          width: 240px;
+    height: 250px;
+
+    margin-top: 25px;
+
+            overflow: hidden;
+
+            border-radius: 45px 45px 25px 25px;
+
+            background: #111827;
+        }
+
+
+        .foto-jogador1 img{
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s ease;
+        }
+
+        .card-jogador1:hover .foto-jogador1 img{
+
+            transform: scale(1.05);
+        }
+
+        .card-jogador1 h2{
+          margin-top: 10px;
+
+          margin-bottom: 15px;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: 1px;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        .informacoes1{
+
+            display: flex;
+
+            height: 42px;
+
+            border: 1px solid  #FFB800;
+
+            border-radius: 6px;
+
+            overflow: hidden;
+
+          
+
+            transition: 0.3s ease;
+        }
+
+        .posicao1{
+
+            width: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #FFD21F;
+
+            color: white;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+        }
+
+        .rank1{
+
+            width: 105px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #080E1C;
+
+            color: #FFFFFF;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: 1px;
+        }
+
+        .card-jogador1:hover .informacoes1{
+
+            box-shadow:
+                0 0 12px rgba(255, 210, 31, 0.5),
+                0 0 30px rgba(255, 138, 0, 0.3);
+        }
+
+        .botao-perfil1{
+
+            width: 120px;
+            height: 35px;
+
+            margin-top: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #cfa808;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 20px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+        .botao-perfil1:hover{
+
+            background: #D0AE60;
+
+            transform: scale(1.05);
+
+            box-shadow:
+               0 0 12px rgba(255, 210, 31, 0.5),
+                0 0 30px rgba(255, 138, 0, 0.3);
+        }
+
+        
+        .card-jogador2::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            background: #0B1120;
+
+            opacity: 0.04;
+
+            border-radius: 50%;
+
+            top: 100px;
+            right: -100px;
+
+            filter: blur(20px);
+
+            pointer-events: none;
+        }
+
+
+.card-jogador2{
+
+            position: relative;
+
+            width: 280px;
+            height: 470px;
+
+            padding: 15px;
+
+            background: #101D32;
+
+            border: 2px solid #FFFFFF;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(0, 107, 255, 0.20);
+
+            transition: 0.3s ease;
+        }
+
+        .card-jogador2:hover{
+
+            transform: translateY(-8px);
+
+            border-color: #8FDBFF;
+
+            box-shadow:
+              0 0 8px #00CFFF,
+        0 0 20px rgba(143, 219, 255, 0.5);
+        }
+
+    .numero2{
+    position: absolute;
+
+    top: 12px;
+    left: 18px;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero2 span{
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #A9BBCD;
+
+    line-height: 0.85;
+
+    text-shadow:       0 0 8px #00CFFF,
+        0 0 20px rgba(143, 219, 255, 0.5);
+}
+
+.numero2 small{
+    margin-top: 3px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #A9BBCD;
+
+    line-height: 1;
+}
+
+        .foto-jogador2{
+
+          width: 240px;
+    height: 250px;
+
+    margin-top: 25px;
+
+            overflow: hidden;
+
+            border-radius: 45px 45px 25px 25px;
+
+            background: #111827;
+
+            transition: 0.4s ease;
+        }
+
+
+        .foto-jogador2 img{
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s ease;
+        }
+
+        .card-jogador2:hover .foto-jogador2 img{
+
+            transform: scale(1.07);
+             transition: 0.4s ease;
+        }
+
+        .card-jogador2 h2{
+          margin-top: 10px;
+
+          margin-bottom: 15px;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: 1px;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        .informacoes2{
+
+            display: flex;
+
+            height: 42px;
+
+            border: 1px solid  #8FDBFF;
+
+            border-radius: 6px;
+
+            overflow: hidden;
+
+          
+
+            transition: 0.3s ease;
+        }
+
+        .posicao2{
+
+            width: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #00CFFF;
+
+            color: black;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+        }
+
+        .rank2{
+
+            width: 105px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #080E1C;
+
+            color: #FFFFFF;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: 1px;
+        }
+
+        .card-jogador2:hover .informacoes2{
+
+            box-shadow:
+            0 0 10px rgba(184, 241, 255, 0.8),
+        0 0 25px rgba(0, 207, 255, 0.35);
+          box-shadow:
+         0 0 8px #00CFFF;
+        }
+
+        .botao-perfil2{
+
+            width: 120px;
+            height: 35px;
+
+            margin-top: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #00CFFF;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 20px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+        .botao-perfil2:hover{
+
+            background: #8FDBFF;
+
+            transform: scale(1.05);
+
+            box-shadow:
+          0 0 10px rgba(184, 241, 255, 0.8),
+        0 0 25px rgba(0, 207, 255, 0.35);
+               
+        }
+
+
+ .card-jogador3::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            background: #E91E63;
+
+            opacity: 0.04;
+
+            border-radius: 50%;
+
+            top: 100px;
+            right: -100px;
+
+            filter: blur(20px);
+
+            pointer-events: none;
+        }
+
+
+.card-jogador3{
+
+            position: relative;
+
+            width: 280px;
+            height: 470px;
+
+            padding: 15px;
+
+            background: #241322;
+
+            border: 2px solid #FF78A8;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 0 10px rgba(255, 61, 129, 0.25);
+
+            transition: 0.3s ease;
+        }
+
+        .card-jogador3:hover{
+
+            transform: translateY(-8px);
+
+            border-color: #FF78A8;
+
+            box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 25px rgba(255, 61, 129, 0.6),
+        0 0 40px rgba(233, 30, 99, 0.3);
+        }
+
+    .numero3{
+    position: absolute;
+
+    top: 12px;
+    left: 18px;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero3 span{
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #C9AAB8;
+
+    line-height: 0.85;
+
+    text-shadow: 0 0 10px rgba(255, 61, 129, 0.25);
+}
+
+.numero3 small{
+    margin-top: 3px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #A9BBCD;
+
+    line-height: 1;
+}
+
+        .foto-jogador3{
+
+          width: 240px;
+    height: 250px;
+
+    margin-top: 25px;
+
+            overflow: hidden;
+
+            border-radius: 45px 45px 25px 25px;
+
+            background: #111827;
+        }
+
+
+        .foto-jogador3 img{
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s ease;
+        }
+
+        .card-jogador3:hover .foto-jogador3 img{
+
+            transform: scale(1.05);
+        }
+
+        .card-jogador3 h2{
+          margin-top: 10px;
+
+          margin-bottom: 15px;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: 1px;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        .informacoes3{
+
+            display: flex;
+
+            height: 42px;
+
+            border: 1px solid  #FF3D81;
+
+            border-radius: 6px;
+
+            overflow: hidden;
+
+
+            transition: 0.3s ease;
+        }
+
+        .posicao3{
+
+            width: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #FF3D81;
+
+            color: white;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+        }
+
+        .rank3{
+
+            width: 105px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #080E1C;
+
+            color: #FFFFFF;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: 1px;
+        }
+
+        .card-jogador3:hover .informacoes3{
+
+            box-shadow:
+          0 0 40px rgba(233, 30, 99, 0.3);
+        }
+
+        .botao-perfil3{
+
+            width: 120px;
+            height: 35px;
+
+            margin-top: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #FF3D81;
+
+            color: black;
+
+            text-decoration: none;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 20px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+        .botao-perfil3:hover{
+
+            background: #E91E63;
+
+            transform: scale(1.05);
+
+            box-shadow:
+            0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 25px rgba(255, 61, 129, 0.6),
+        0 0 40px rgba(233, 30, 99, 0.3);
+               
+        }
+
+        .card-jogador4::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            background: #0B1120;
+
+            opacity: 0.04;
+
+            border-radius: 50%;
+
+            top: 100px;
+            right: -100px;
+
+            filter: blur(20px);
+
+            pointer-events: none;
+        }
+
+
+
+.card-jogador4::before{
+
+            content: "";
+
+            position: absolute;
+
+            width: 180px;
+            height: 180px;
+
+            background: #E91E63;
+
+            opacity: 0.04;
+
+            border-radius: 50%;
+
+            top: 100px;
+            right: -100px;
+
+            filter: blur(20px);
+
+            pointer-events: none;
+        }
+
+
+.card-jogador4{
+
+            position: relative;
+
+            width: 280px;
+            height: 470px;
+
+            padding: 15px;
+
+            background: #0B201C;
+
+            border: 2px solid #FFFFFF;
+
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            overflow: hidden;
+
+            box-shadow:
+                 0 0 10px rgba(0, 191, 166, 0.4),
+    0 0 25px rgba(0, 245, 212, 0.25);
+
+            transition: 0.3s ease;
+        }
+
+        .card-jogador4:hover{
+
+            transform: translateY(-8px);
+
+            border-color: #FFFFFF;
+
+            box-shadow:
+          0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(0, 245, 212, 0.7),
+        0 0 40px rgba(0, 191, 166, 0.45);
+        }
+
+    .numero4{
+    position: absolute;
+
+    top: 12px;
+    left: 18px;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.numero4 span{
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 38px;
+
+    color: #A7C4BE;
+
+    line-height: 0.85;
+
+    text-shadow: 0 0 10px rgba(0, 191, 166, 0.4),;
+}
+
+.numero4 small{
+    margin-top: 3px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #A9BBCD;
+
+    line-height: 1;
+}
+
+        .foto-jogador4{
+
+          width: 240px;
+    height: 250px;
+
+    margin-top: 25px;
+
+            overflow: hidden;
+
+            border-radius: 45px 45px 25px 25px;
+
+            background: #111827;
+        }
+
+
+        .foto-jogador4 img{
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+             transform: scale(1.05);
+            transition: 0.4s ease;
+        }
+
+        .card-jogador4:hover .foto-jogador4 img{
+
+             transform: scale(1.07);
+             transition: 0.4s ease;
+        }
+
+        .card-jogador4 h2{
+          margin-top: 10px;
+
+          margin-bottom: 15px;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: 1px;
+
+            color: #FFFFFF;
+
+            text-align: center;
+        }
+
+        .informacoes4{
+
+            display: flex;
+
+            height: 42px;
+
+            border: 1px solid  #0B201C;
+
+            border-radius: 6px;
+
+            overflow: hidden;
+
+
+            transition: 0.3s ease;
+        }
+
+        .posicao4{
+
+            width: 65px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #008F83;
+            
+            color: white;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+        }
+
+        .rank4{
+
+            width: 105px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #080E1C;
+
+            color: #FFFFFF;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: 1px;
+
+            border: 1px solid  #008F83;
+        }
+
+        .card-jogador4:hover .informacoes4{
+
+            box-shadow:
+        0 0 40px rgba(0, 191, 166, 0.45);
+        }
+
+        .botao-perfil4{
+
+            width: 120px;
+            height: 35px;
+
+            margin-top: 12px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #008F83; 
+
+            color: black;
+
+            text-decoration: none;
+
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 20px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+        .botao-perfil4:hover{
+                  background: #FFFFFF;
+
+            transform: scale(1.05);
+            
+        box-shadow:
+        0 0 10px rgba(255, 255, 255, 0.8),
+        0 0 20px rgba(0, 245, 212, 0.7),
+        0 0 40px rgba(0, 191, 166, 0.45);
+        }
+
+      
+.ver-jogadores{
+text-decoration: none;
+color: #FFFFFF;
+background-color:#006BFF;
+width: 290px;
+position: absolute;
+top: 85%;
+right: 40%;
+background-color: #0B0F19;
+color: #FFFFFF;
+text-decoration: none;
+border: solid 1px #1977FF;
+border-radius: 8px;
+padding: 16px 40px;
+font-family: "Bebas Neue", sans-serif;
+font-style:oblique;
+font-size: 30px;
+}
+
+.ver-jogadores:hover{
+background-color: #0056b3;
+transform: scale(1.05);
+box-shadow: 
+0 10px 25px rgba(0, 0, 0, 25),
+0 0 20px rgba(140, 120, 255, .6);
+}
+
+.New-Gens{
+background-image: url("/images/fundo New gens.png");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 120vh;
+position: relative;
+gap: 25px ;
+display: flex;
+flex-direction: column;
+}
+
+
+
+.newgens-hud{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:90px 0 70px;
+}
+
+.titulo-newgens{
+    position:relative;
+    width:470px;
+    padding:20px 35px 30px;
+    text-align:center;
+}
+
+.titulo-newgens h2{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:80px;
+    color:white;
+    letter-spacing:5px;
+    margin:0;
+    
+}
+
+.titulo-newgens p{
+    color:#1697ff;
+    font-size:12px;
+    letter-spacing:6px;
+    margin-top:8px;
+}
+
+.tag{
+    position:absolute;
+    top:-12px;
+    left:25px;
+    background:#0b9cff;
+    padding:5px 14px;
+    color:white;
+    font-size:14px;
+    font-family:"Bebas Neue", sans-serif;
+}
+
+.titulo-newgens::before,
+.titulo-newgens::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border:2px solid #0b9cff;
+}
+
+.titulo-newgens::before{
+    clip-path:polygon(8% 0,100% 0,100% 82%,92% 100%,0 100%,0 18%);
+    box-shadow:0 0 12px #0b9cff;
+}
+
+.titulo-newgens::after{
+    border:none;
+    height:2px;
+    width:100%;
+    background:linear-gradient(90deg,#0b9cff,transparent);
+    bottom:-12px;
+    top:auto;
+}
+
+.titulo-newgens .scan-line{
+    display:none;
+}
+
+.newgens-hud::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:100%;
+    width:2px;
+    height:55px;
+    background:linear-gradient(#26b5ff,transparent);
+    box-shadow:0 0 8px #26b5ff;
+}
+
+.hud-left,
+.hud-right{
+    position:absolute;
+    top:0;
+    width:90px;
+    height:340px;
+    color:#1498ff;
+}
+
+.hud-left{ left:20px; }
+.hud-right{ right:20px; }
+
+.hud-left span,
+.hud-right span{
+    font-size:52px;
+    font-family:"Bebas Neue", sans-serif;
+}
+
+.hud-left p,
+.hud-right p{
+    writing-mode:vertical-rl;
+    text-orientation:mixed;
+    font-size:18px;
+    letter-spacing:5px;
+    margin:18px auto;
+}
+
+.hud-left small,
+.hud-right small{
+    display:block;
+    margin-top:20px;
+    font-size:14px;
+    letter-spacing:3px;
+}
+
+.hud-bar{
+    position:relative;
+    width:2px;
+    height:170px;
+    margin:20px auto;
+    background:rgba(20,152,255,.25);
+    overflow:hidden;
+}
+
+.hud-bar::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:30px;
+    background:#26b5ff;
+    box-shadow:0 0 15px #26b5ff;
+    animation:hudMove 2.8s linear infinite;
+}
+
+.hud-bar::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:repeating-linear-gradient(
+        to bottom,
+        transparent 0 8px,
+        rgba(38,181,255,.35) 8px 10px
+    );
+}
+
+@keyframes hudMove{
+
+    0%{
+        transform:translateY(-35px);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    80%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(170px);
+        opacity:0;
+    }
+
+}
+
+ 
+
+
+
+.card-kaiser {
+    position: relative;
+    width: 280px;
+    height: 305px;
+
+    background: #0047AB;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 20%;
+    bottom: 44%;
+    transition: .3s;
+}
+
+
+.personagem-kaiser {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-kaiser::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.macionalidade{
+color: #FFFFFF;
+display: flex;
+}
+
+.card-kaiser:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #006BFF;
+
+    box-shadow:
+       0 0 8px #006BFF,
+    0 0 20px rgba(0, 107, 255, 0.7),
+    0 0 45px rgba(0, 140, 255, 0.4);
+
+    
+.card-kaiser:hover .personagem-kaiser {
+    transform: scale(1.05);
+}
+}
+
+
+.info4 {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info4 div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info4 span {
+    color: #FFFFFF;
+
+    font-weight: bold;
+}
+
+.info4 b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid ;
+    
+    font-size: 10px;
+}
+
+.info4 p {
+    color: #FFFFFF;
+}
+
+
+.butão-kaiser {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #B8860B;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-kaiser:hover {
+    background: #4169E1;
+
+    color: #090B13;
+
+    box-shadow:
+    0 0 8px #006BFF,
+    0 0 20px rgba(0, 107, 255, 0.7),
+    0 0 45px rgba(0, 140, 255, 0.4);
+
+    transform: translateY(-2px);
+}
+
+
+.card-sae {
+    position: relative;
+    width: 280px;
+    height: 305px;
+
+    background: #240B18;
+    border: 2px solid;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 20%;
+    bottom: 8%;
+    transition: .3s;
+}
+
+
+.personagem-sae {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-sae::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.card-sae:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #FF4FA3;
+
+    box-shadow:
+    0 0 8px #FF4FA3,
+    0 0 20px rgba(255, 79, 163, 0.7),
+    0 0 45px rgba(230, 0, 115, 0.4);
+
+    
+.card-sae:hover .personagem-sae {
+    transform: scale(1.05);
+}
+}
+
+
+.info5 {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info5 div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info5 span {
+    color: #FFFFFF;
+
+    font-weight: bold;
+}
+
+.info5 b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid ;
+    
+    font-size: 10px;
+}
+
+.info5 p {
+    color: #FFFFFF;
+}
+
+
+.butão-sae {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #FF4FA3;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-sae:hover {
+    background: #FFC1DC;
+
+    color: #090B13;
+
+    box-shadow:
+      0 0 8px #FF4FA3,
+    0 0 20px rgba(255, 79, 163, 0.7),
+    0 0 45px rgba(230, 0, 115, 0.4);
+
+    transform: translateY(-2px);
+}
+
+
+
+
+
+.card-lorenzo {
+    position: relative;
+    width: 280px;
+    height: 430x;
+
+    background: #090b13;
+    border: 2px solid;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 40%;
+    bottom: 44%;
+    transition: .3s;
+}
+
+.personagem-lorenzo {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-lorenzo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.card-lorenzo:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #C8FF66;
+
+    box-shadow:
+        0 0 12px rgba(157, 255, 0, 0.7),
+        0 0 30px rgba(157, 255, 0, 0.35),
+        0 0 55px rgba(157, 255, 0, 0.15);
+}
+
+.card-lorenzo:hover .personagem-lorenzo {
+    transform: scale(1.05);
+}
+
+.info {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info span {
+    color: #aaa;
+
+    font-weight: bold;
+}
+
+.info b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid currentColor;
+    
+    font-size: 10px;
+}
+
+.info p {
+    color: #FFFFFF;
+}
+
+
+.butão-lorenzo {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #395211;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-lorenzo:hover {
+    background: #9DFF00;
+
+    color: #090B13;
+
+    box-shadow:
+        0 0 12px rgba(157, 255, 0, 0.6),
+        0 0 25px rgba(157, 255, 0, 0.25);
+
+    transform: translateY(-2px);
+}
+
+
+
+.card-hugo {
+    position: relative;
+    width: 280px;
+    height: 328px;
+
+    background: #090b13;
+    border: 2px solid;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 60%;
+    bottom: 44%;
+    transition: .3s;
+}
+
+
+.personagem-hugo {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-hugo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.card-hugo:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #2A1638;
+
+    box-shadow:   0 0 10px rgba(142, 60, 199, 0.5),
+            0 0 25px rgba(217, 70, 168, 0.25);
+
+.card-hugo:hover .personagem-hugo {
+    transform: scale(1.05);
+}
+}
+
+
+
+.numero{
+color: #FFFFFF;
+
+}
+
+.info1 {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info1 div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info1 span {
+    color: #FFFFFF;
+
+    font-weight: bold;
+}
+
+.info1 b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid currentColor;
+    
+    font-size: 10px;
+}
+
+.info1 p {
+    color: #FFFFFF;
+}
+
+
+.butão-hugo {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #4B1F68;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-hugo:hover {
+    background: #8E3CC7;
+
+    color: #090B13;
+
+    box-shadow:
+    
+            0 0 20px rgba(142, 60, 199, 0.6),
+            0 0 40px rgba(217, 70, 168, 0.3);
+
+    transform: translateY(-2px);
+}
+
+
+
+
+
+.card-loki {
+    position: relative;
+    width: 280px;
+    height: 320px;
+
+    background: #090b13;
+    border: 2px solid;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 40%;
+    bottom: 8%;
+    transition: .3s;
+}
+
+
+.personagem-loki {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-loki::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.card-loki:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #163A63;
+
+    box-shadow:    0 0 8px rgba(0, 207, 255, 0.7),
+    0 0 20px rgba(23, 105, 255, 0.45),
+    0 0 40px rgba(0, 207, 255, 0.2);
+
+    
+.card-loki:hover .personagem-loki {
+    transform: scale(1.05);
+}
+}
+
+
+.info2 {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info2 div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info2 span {
+    color: #FFFFFF;
+
+    font-weight: bold;
+}
+
+.info2 b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid currentColor;
+    
+    font-size: 10px;
+}
+
+.info2 p {
+    color: #FFFFFF;
+}
+
+
+.butão-loki {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #65D9FF;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-loki:hover {
+    background: #163A63;
+
+    color: #090B13;
+
+    box-shadow:
+    
+     0 4px 15px rgba(23, 105, 255, 0.18);
+
+    transform: translateY(-2px);
+}
+
+
+
+
+.card-bunny {
+    position: relative;
+    width: 280px;
+    height: 320px;
+
+    background: #3A1622;
+    border: 2px solid;
+    border-radius: 8px;
+
+    overflow: hidden;
+    transform: skewY(-2deg);
+    position: absolute;
+    left: 60%;
+    bottom: 8%;
+    transition: .3s;
+}
+
+
+.personagem-bunny {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    object-position: center top;
+    left: -7.5%;
+}
+
+.card-bunny::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 25%,
+            rgba(9, 11, 19, 0.25) 40%,
+            rgba(9, 11, 19, 0.85) 65%,
+            #090B13 78%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+.card-bunny:hover {
+    transform: skewY(-2deg) translateY(-8px);
+
+    border-color: #3A1622;
+
+    box-shadow:       0 0 8px rgba(255, 79, 154, 0.6),
+    0 0 20px rgba(229, 43, 63, 0.4),
+    0 0 40px rgba(185, 31, 53, 0.2);
+
+    
+.card-loki:hover .personagem-loki {
+    transform: scale(1.05);
+}
+}
+
+
+.info3 {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+    bottom: 65px;
+
+    z-index: 3;
+}
+
+.info3 div {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+.info3 span {
+    color: #FFFFFF;
+
+    font-weight: bold;
+}
+
+.info3 b {
+    padding: 5px 8px;
+    color: #FFFFFF;
+    border: 1px solid currentColor;
+    
+    font-size: 10px;
+}
+
+.info3 p {
+    color: #FFFFFF;
+}
+
+
+.butão-bunny {
+    position: absolute;
+
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+
+    height: 38px;
+
+    background: transparent;
+
+    border: 1px solid ;
+
+    color: #FFCCD2;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    z-index: 3;
+
+    transition: 0.3s ease;
+}
+
+.butão-bunny:hover {
+    background: #7D1628;
+
+    color: #090B13;
+
+    box-shadow:
+    
+     0 0 15px rgba(229, 43, 63, 0.45);
+
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   MONTE SEU TIME
+   Todas as classes possuem o prefixo mt-
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.mt-section {
+    position: relative;
+    width: 100%;
+    
+    min-height: 100vh;
+    padding: 80px 5%;
+    background: #0B0F19;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.mt-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.mt-header-tag {
+    color: #007BFF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.mt-header h1 {
+    margin: 0;
+    font-size: clamp(35px, 5vw, 70px);
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1;
+}
+
+.mt-header h1 strong {
+    display: block;
+    color: #007BFF;
+    font-weight: 900;
+}
+
+.mt-header p {
+    margin-top: 20px;
+    color: #8d96a8;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   CONSTRUTOR
+========================= */
+
+.mt-builder {
+    display: grid;
+    grid-template-columns: 280px minmax(400px, 1fr) 280px;
+    gap: 25px;
+    align-items: stretch;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   PAINEL DE JOGADORES
+========================= */
+
+.mt-players-panel,
+.mt-info-panel {
+    background: #101827;
+    border: 1px solid rgba(0, 123, 255, 0.25);
+    border-radius: 12px;
+    padding: 34px;
+}
+
+.mt-panel-header,
+.mt-info-header {
+    margin-bottom: 25px;
+}
+
+.mt-panel-header span,
+.mt-info-header span {
+    display: block;
+    color: #007BFF;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.mt-panel-header h2,
+.mt-info-header h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   BUSCA
+========================= */
+
+.mt-players-search input {
+    width: 100%;
+    padding: 13px 15px;
+    background: #0B1120;
+    border: 1px solid #26354d;
+    border-radius: 6px;
+    outline: none;
+    color: #ffffff;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    
+}
+
+.mt-players-search input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.15);
+}
+
+
+/* =========================
+   FILTROS
+========================= */
+
+.mt-players-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 18px 0;
+}
+
+.mt-player-filter {
+    padding: 8px 10px;
+    background: transparent;
+    border: 1px solid #26354d;
+    border-radius: 4px;
+    color: #8d96a8;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.mt-player-filter:hover,
+.mt-player-filter.mt-active {
+    background: #007BFF;
+    border-color: #007BFF;
+    color: #ffffff;
+}
+
+
+/* =========================
+   LISTA DE JOGADORES
+========================= */
+
+.mt-players-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.mt-player-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    background: #0B1120;
+    border: 1px solid #26354d;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mt-player-card:hover {
+    border-color: #007BFF;
+    transform: translateX(4px);
+}
+
+.mt-player-card img {
+    width: 48px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.mt-player-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mt-player-card-info span {
+    color: #007BFF;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.mt-player-card-info h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.mt-player-card-info strong {
+    color: #8d96a8;
+    font-size: 12px;
+}
+
+
+/* =========================
+   CAMPO
+========================= */
+
+.mt-field-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.mt-field {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    aspect-ratio: 1.45;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 123, 255, 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(0, 123, 255, 0.04) 1px,
+            transparent 1px
+        ),
+        #101827;
+    background-size: 35px 35px;
+    border: 2px solid #26354d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   LINHAS DO CAMPO
+========================= */
+
+.mt-field-line {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mt-field-center-line {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    transform: translateX(-50%);
+}
+
+.mt-field-center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mt-field-center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mt-field-box {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    width: 15%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mt-field-box-left {
+    left: 0;
+    border-left: none;
+}
+
+.mt-field-box-right {
+    right: 0;
+    border-right: none;
+}
+
+
+/* =========================
+   POSIÇÕES
+========================= */
+
+.mt-field-position {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.mt-position-st {
+    top: 17%;
+    left: 50%;
+}
+
+.mt-position-lw {
+    top: 30%;
+    left: 20%;
+}
+
+.mt-position-rw {
+    top: 30%;
+    left: 80%;
+}
+
+.mt-position-cam {
+    top: 45%;
+    left: 50%;
+}
+
+.mt-position-cm-left {
+    top: 55%;
+    left: 30%;
+}
+
+.mt-position-cm-right {
+    top: 55%;
+    left: 70%;
+}
+
+.mt-position-lb {
+    top: 72%;
+    left: 15%;
+}
+
+.mt-position-cb-left {
+    top: 75%;
+    left: 38%;
+}
+
+.mt-position-cb-right {
+    top: 75%;
+    left: 62%;
+}
+
+.mt-position-rb {
+    top: 72%;
+    left: 85%;
+}
+
+.mt-position-gk {
+    top: 90%;
+    left: 50%;
+}
+
+
+/* =========================
+   JOGADORES NO CAMPO
+========================= */
+
+.mt-field-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background: #0B1120;
+    border: 2px solid #007BFF;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.mt-field-player:hover {
+    background: #007BFF;
+    transform: scale(1.08);
+}
+
+.mt-field-player-empty {
+    font-size: 25px;
+    color: #007BFF;
+}
+
+.mt-field-player-image {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mt-field-player-name {
+    position: absolute;
+    bottom: -22px;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.mt-position-label {
+    color: #8d96a8;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   INFORMAÇÕES DO TIME
+========================= */
+
+.mt-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #26354d;
+}
+
+.mt-info-row span {
+    color: #8d96a8;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.mt-info-row strong {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.mt-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    padding: 20px;
+    background: #0B1120;
+    border: 1px solid #26354d;
+    border-radius: 8px;
+}
+
+.mt-rating span {
+    color: #8d96a8;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.mt-rating strong {
+    margin: 8px 0;
+    color: #007BFF;
+    font-size: 55px;
+    line-height: 1;
+}
+
+.mt-rating small {
+    color: #8d96a8;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   ATRIBUTOS
+========================= */
+
+.mt-attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.mt-attribute {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mt-attribute > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mt-attribute span {
+    color: #8d96a8;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.mt-attribute strong {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.mt-attribute-bar {
+    width: 100%;
+    height: 5px;
+    background: #26354d;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mt-attribute-bar i {
+    display: block;
+    height: 100%;
+    background: #007BFF;
+    border-radius: inherit;
+    transition: width 0.4s ease;
+}
+
+
+/* =========================
+   DESTAQUE
+========================= */
+
+.mt-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 25px;
+    padding: 15px;
+    background: #0B1120;
+    border-left: 3px solid #007BFF;
+}
+
+.mt-highlight span {
+    color: #8d96a8;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.mt-highlight strong {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.mt-save-team,
+.mt-clear-team {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.mt-save-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 14px;
+    background: #007BFF;
+    border: 1px solid #007BFF;
+    color: #ffffff;
+}
+
+.mt-save-team:hover {
+    background: #00CFFF;
+    border-color: #00CFFF;
+}
+
+.mt-clear-team {
+    margin-top: 10px;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #26354d;
+    color: #8d96a8;
+    font-size: 10px;
+}
+
+.mt-clear-team:hover {
+    border-color: #007BFF;
+    color: #ffffff;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 1100px) {
+    .mt-builder {
+        grid-template-columns: 240px minmax(350px, 1fr);
+    }
+
+    .mt-info-panel {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .mt-section {
+        padding: 50px 15px;
+    }
+
+    .mt-builder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mt-field-panel {
+        order: 1;
+    }
+
+    .mt-players-panel {
+        order: 2;
+    }
+
+    .mt-info-panel {
+        order: 3;
+    }
+
+    .mt-field {
+        width: 100%;
+    }
+
+    .mt-players-list {
+        max-height: 350px;
+    }
+}
+
+
+/* =====================================================
+   JOGADOR PREENCHIDO NO CAMPO
+===================================================== */
+
+.mt-field-player {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    cursor: pointer;
+
+}
+
+/* Imagem do jogador */
+
+.mt-field-player-image {
+
+    width: 58px;
+
+    height: 58px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #008cff;
+
+    background: #0b1424;
+
+    display: none;
+
+}
+
+/* Nome do jogador */
+
+.mt-field-player-name {
+
+    font-size: 10px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    max-width: 100px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+/* Slot preenchido */
+
+.mt-field-player.slot-preenchido {
+
+    border-color: #008cff;
+
+}
+
+/* Remove o + quando estiver preenchido */
+
+.mt-field-player.slot-preenchido
+.mt-field-player-empty {
+
+    display: none;
+
+}
+
+
+
+/* ==========================================
+   GACHA / DIAMANTES BRUTOS
+========================================== */
+
+.gacha {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 6%;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(0, 107, 255, .12),
+            transparent 45%
+        ),
+        #06080e;
+
+    color: white;
+    background-image: url("/images/Gacha-fundo.png");
+       background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 105vh;
+    
+}
+
+
+/* TÍTULO */
+
+.titulo-gacha {
+    margin-bottom: 30px;
+}
+
+.titulo-gacha span {
+    display: block;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+
+    letter-spacing: 8px;
+
+    color: white;
+}
+
+.titulo-gacha h1 {
+    margin: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 105px;
+
+    line-height: .8;
+
+    color: #006BFF;
+
+    text-shadow:
+        0 0 10px rgba(0,107,255,.8),
+        0 0 35px rgba(0,107,255,.4);
+}
+
+.titulo-gacha p {
+    margin-top: 25px;
+
+    color: #718096;
+
+    font-family: "Rajdhani", sans-serif;
+
+    letter-spacing: 2px;
+}
+
+
+/* CONTAINER PRINCIPAL */
+
+.gacha-container {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        .8fr
+        .8fr;
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* ==========================================
+   RESULTADO
+========================================== */
+
+.resultado-gacha {
+    position: relative;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: rgba(10,16,26,.95);
+
+    border: 1px solid #213149;
+
+    border-radius: 18px;
+}
+
+
+/* CARD */
+
+.card-gacha {
+    position: relative;
+
+    width: 380px;
+    height: 470px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #071426,
+            #02070d
+        );
+
+    border: 2px solid #006BFF;
+
+    box-shadow:
+        0 0 15px rgba(0,107,255,.7),
+        0 0 50px rgba(0,107,255,.3);
+}
+
+
+/* IMAGEM */
+
+.card-gacha img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    z-index: 1;
+}
+
+
+/* GRADIENTE */
+
+.card-gacha::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    background:
+        linear-gradient(
+            transparent 25%,
+            rgba(0,0,0,.15) 45%,
+            rgba(0,0,0,.95) 100%
+        );
+}
+
+
+/* INFORMAÇÕES DO CARD */
+
+.info-card {
+    position: absolute;
+
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+
+    z-index: 3;
+}
+
+.info-card span {
+    font-size: 12px;
+
+    color: #006BFF;
+
+    letter-spacing: 3px;
+}
+
+.info-card h2 {
+    margin: 8px 0;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 42px;
+
+    line-height: .9;
+
+    color: white;
+}
+
+.info-card p {
+    color: #9aa7b8;
+
+    font-family: "Rajdhani", sans-serif;
+}
+
+
+/* RARIDADE */
+
+.raridade-card {
+    position: absolute;
+
+    top: 25px;
+    left: 35px;
+
+    padding: 8px 15px;
+
+    background: #006BFF;
+
+    border-radius: 6px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    z-index: 5;
+}
+
+
+/* ==========================================
+   SUMMON
+========================================== */
+
+.controle-gacha,
+.raridades {
+
+    padding: 35px;
+
+    background: rgba(10,16,26,.95);
+
+    border: 1px solid #213149;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+}
+
+
+.controle-gacha > span {
+    color: #006BFF;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+.controle-gacha h2 {
+    margin: 8px 0 35px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 40px;
+}
+
+
+/* DIAMANTES */
+
+.diamantes {
+    padding: 20px 0;
+
+    border-top: 1px solid #213149;
+    border-bottom: 1px solid #213149;
+}
+
+.diamantes span {
+    display: block;
+
+    font-size: 11px;
+
+    color: #718096;
+
+    letter-spacing: 2px;
+}
+
+.diamantes strong {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 28px;
+
+    color: #59c8ff;
+}
+
+
+/* BOTÕES */
+
+.botao-roleta {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #006BFF;
+
+    color: white;
+
+    font-family: "Orbitron", sans-serif;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+
+.botao-roleta:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(0,107,255,.7);
+}
+
+
+.botao-roleta.dez {
+
+    margin-top: 12px;
+
+    background: #101b29;
+
+    border: 1px solid #006BFF;
+}
+
+
+.botao-roleta small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    opacity: .7;
+}
+
+
+/* ==========================================
+   RARIDADES
+========================================== */
+
+.raridades h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 25px;
+
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 30px;
+}
+
+
+.raridade {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background: #101a27;
+
+    border: 1px solid;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+}
+
+
+.raridade.comum {
+    color: #8a96a6;
+    border-color: #8a96a6;
+}
+
+
+.raridade.raro {
+    color: #3ea7ff;
+    border-color: #3ea7ff;
+}
+
+
+.raridade.epico {
+    color: #a855f7;
+    border-color: #a855f7;
+}
+
+
+.raridade.newgen {
+    color: #ff4fa3;
+
+    border-color: #ff4fa3;
+
+    box-shadow:
+        0 0 15px rgba(255,79,163,.5);
+}
+
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .gacha-container {
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+    .resultado-gacha {
+
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .gacha {
+
+        padding: 90px 20px;
+    }
+
+    .titulo-gacha h1 {
+
+        font-size: 70px;
+    }
+
+    .gacha-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .resultado-gacha {
+
+        grid-column: auto;
+    }
+
+}
+
+#imgPersonagem.resultado-final {
+    animation: revelarPersonagem 0.8s ease-out;
+}
+
+@keyframes revelarPersonagem {
+    0% {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   CONTAINER DA MINI TABELA X10
+========================================= */
+
+.resultado-x10-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 15px auto;
+    padding: 12px;
+
+    background: #0B1120;
+    border: 1px solid #006BFF;
+    border-radius: 14px;
+
+    box-shadow:
+        0 0 15px rgba(0, 107, 255, 0.15);
+
+    animation: aparecerTabela 0.5s ease;
+}
+
+.resultado-x10-container h2 {
+    margin: 0 0 20px;
+
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid rgba(0, 107, 255, 0.4);
+    padding-bottom: 15px;
+}
+
+
+/* =========================================
+   TABELA
+========================================= */
+
+.tabela-x10 {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Cabeçalho */
+
+.tabela-x10 thead {
+    background: #006BFF;
+}
+
+.tabela-x10 th {
+    padding: 14px 12px;
+
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* Linhas */
+
+.tabela-x10 tbody tr {
+    background: #111A2E;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition: 0.2s ease;
+}
+
+.tabela-x10 tbody tr:nth-child(even) {
+    background: #0D1628;
+}
+
+.tabela-x10 tbody tr:hover {
+    background: #172743;
+    transform: scale(1.01);
+}
+
+.tabela-x10 td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   NÚMERO DA LINHA
+========================================= */
+
+.numero-tabela-x10 {
+    width: 45px;
+
+    color: #6FAEFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================================
+   IMAGEM DO PERSONAGEM
+========================================= */
+
+.imagem-tabela-x10 {
+    width: 45px;
+    height: 45px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    border: 1px solid #006BFF;
+
+    display: block;
+}
+
+
+/* =========================================
+   NOME DO PERSONAGEM
+========================================= */
+
+.nome-tabela-x10 {
+    font-weight: bold;
+    color: white;
+}
+
+
+/* =========================================
+   RARIDADES
+========================================= */
+
+.raridade-tabela-x10 {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Cores das raridades */
+
+.raridade-comum {
+    color: #D5D5D5;
+    background: rgba(180, 180, 180, 0.15);
+    border: 1px solid #888;
+}
+
+.raridade-raro {
+    color: #4DA3FF;
+    background: rgba(0, 123, 255, 0.15);
+    border: 1px solid #007BFF;
+}
+
+.raridade-épico {
+    color: #C084FC;
+    background: rgba(168, 85, 247, 0.15);
+    border: 1px solid #A855F7;
+}
+
+.raridade-lendário {
+    color: #FFD166;
+    background: rgba(255, 193, 7, 0.15);
+    border: 1px solid #FFD166;
+}
+
+.raridade-new-gen {
+    color: #FF4DFF;
+    background: rgba(255, 0, 255, 0.15);
+    border: 1px solid #FF4DFF;
+}
+
+
+/* =========================================
+   ANIMAÇÃO
+========================================= */
+
+@keyframes aparecerTabela {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 600px) {
+    .resultado-x10-container {
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+
+    .resultado-x10-container h2 {
+        font-size: 17px;
+    }
+
+    .tabela-x10 {
+        font-size: 13px;
+    }
+
+    .tabela-x10 th,
+    .tabela-x10 td {
+         padding: 4px 6px;
+    }
+
+    .imagem-tabela-x10 {
+        width: 36px;
+        height: 36px;
+    }
+
+    .numero-tabela-x10 {
+        width: 25px;
+    }
+
+    .raridade-tabela-x10 {
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.resultado-x10-container {
+    display: none;
+}
+
+.player-card {
+    width: 92%;
+    height: 58px;
+    min-height: 58px;
+
+    background: #0B1120;
+    border: 1px solid #1c2a3d;
+    border-radius: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    transition: 0.3s ease;
+}
+
+.player-card:hover {
+    transform: translateY(-6px);
+    border-color: #2d8cff;
+    box-shadow: 0 0 20px rgba(0, 107, 255, 0.35);
+}
+
+.player-card-image {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.player-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+.player-card-info {
+    flex: 1;
+
+    height: 100%;
+    padding: 6px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-align: left;
+}
+
+.player-rarity {
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: #5bbcff;
+}
+
+.player-card-info h3 {
+    margin: 0;
+
+    font-size: 11px;
+    color: white;
+
+    white-space: nowrap;
+}
+
+.player-overall {
+    margin: 0;
+    margin-left: auto;
+
+    font-size: 8px;
+    color: #9daac0;
+
+    white-space: nowrap;
+}
+
+.player-overall strong {
+    color: #00cfff;
+    font-size: 14px;
+}
+
+.button-add-team {
+    display: none;
+}
+
+.players-list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+    overflow: visible;
+}
+
+.botao-ver-jogadores {
+    display: block;
+
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+
+    background: transparent;
+    border: 1px solid #006BFF;
+    border-radius: 5px;
+
+    color: white;
+    font-family: inherit;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.botao-ver-jogadores:hover {
+    background: #006BFF;
+    box-shadow: 0 0 15px rgba(0, 107, 255, 0.35);
+}
+
+.player-card:hover .button-add-team {
+    display: block;
+}
+
+.player-position {
+    display: none !important;
+}
+/* =====================================================
+   AJUSTES DA VERSÃO EM REACT (JSX + SCSS)
+===================================================== */
+
+.mt-empty-elenco {
+  font-family: "Rajdhani", sans-serif;
+  color: #8fb6e6;
+  font-size: 15px;
+  text-align: center;
+  padding: 18px;
+  line-height: 1.4;
+}
+
+.mt-field-position-ativa .mt-field-player {
+  outline: 2px solid #0a84ff;
+  box-shadow: 0 0 18px rgba(10, 132, 255, 0.7);
+}
+
+.botao-roleta:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
