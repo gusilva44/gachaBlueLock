@@ -2,18 +2,12 @@ import { useMemo, useState } from "react";
 
 import { useBlueLock } from "@/context/BlueLockContext";
 
-import {
-  calcularTime,
-  imagemUrl,
-  jogadorPodeJogar,
-  SLOTS,
-
-} from "@/lib/bluelock/utils";
+import { calcularTime, imagemUrl, jogadorPodeJogar, SLOTS } from "@/lib/bluelock/utils";
 
 const LIMITE_JOGADORES = 6;
 
 const filtros = [
-  { id: "todos", rotulo: "TODOS", posicoes: []  },
+  { id: "todos", rotulo: "TODOS", posicoes: [] },
   { id: "ataque", rotulo: "ATAQUE", posicoes: ["ST", "FW", "LW", "RW"] },
   { id: "meio", rotulo: "MEIO", posicoes: ["CAM", "CM", "MF"] },
   { id: "defesa", rotulo: "DEFESA", posicoes: ["LB", "CB", "RB", "DF"] },
@@ -37,11 +31,9 @@ export function MonteSeuTime() {
       const combinaBusca = jogador.nome.toLowerCase().includes(busca.trim().toLowerCase());
 
       const combinaFiltro =
-        posicoesFiltro.length === 0 ||
-        jogador.posicoes.some((pos) => posicoesFiltro.includes(pos));
+        posicoesFiltro.length === 0 || jogador.posicoes.some((pos) => posicoesFiltro.includes(pos));
 
-      const combinaSlot =
-        !slotSelecionado || jogadorPodeJogar(jogador, slotSelecionado.posicao);
+      const combinaSlot = !slotSelecionado || jogadorPodeJogar(jogador, slotSelecionado.posicao);
 
       return combinaBusca && combinaFiltro && combinaSlot;
     });

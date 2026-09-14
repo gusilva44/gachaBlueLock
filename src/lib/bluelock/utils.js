@@ -1,4 +1,3 @@
-
 import { personagens } from "@/data/personagens";
 
 /** Imagens locais ficam em /public/images. URLs completas passam direto. */
@@ -51,16 +50,13 @@ export const SLOTS = [
   { id: "CB_DIR", posicao: "CB", classe: "mt-position-cb-right" },
   { id: "RB", posicao: "RB", classe: "mt-position-rb" },
   { id: "GK", posicao: "GK", classe: "mt-position-gk" },
-] ;
-
- 
-
+];
 
 export const escalacaoVazia = () =>
   SLOTS.reduce((acc, slot) => {
     acc[slot.id] = null;
     return acc;
-  }, {} );
+  }, {});
 
 const compatibilidade = {
   ST: ["ST", "FW"],
@@ -85,7 +81,7 @@ export function classeRaridade(raridade) {
 }
 
 export function calcularTime(escalacao) {
-  const titulares = Object.values(escalacao).filter(Boolean) ;
+  const titulares = Object.values(escalacao).filter(Boolean);
 
   if (titulares.length === 0) {
     return {

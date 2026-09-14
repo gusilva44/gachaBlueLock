@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 import { useBlueLock } from "@/context/BlueLockContext";
-import { personagens, } from "@/data/personagens";
+import { personagens } from "@/data/personagens";
 import {
   CUSTO_ROLETA_1,
   CUSTO_ROLETA_10,
@@ -191,9 +191,7 @@ export function Gacha() {
               <tbody>
                 {resultadosX10.map((personagem, indice) => (
                   <tr key={`${personagem.id}-${indice}`}>
-                    <td className="numero-tabela-x10">
-                      {String(indice + 1).padStart(2, "0")}
-                    </td>
+                    <td className="numero-tabela-x10">{String(indice + 1).padStart(2, "0")}</td>
 
                     <td>
                       <img

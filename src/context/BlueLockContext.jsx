@@ -1,13 +1,4 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-
-} from "react";
-
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
 import {
   CHAVE_DIAMANTES,
@@ -17,22 +8,7 @@ import {
   escalacaoVazia,
   jogadorPodeJogar,
   SLOTS,
-
-
 } from "@/lib/bluelock/utils";
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const BlueLockContext = createContext(null);
 
@@ -40,10 +16,7 @@ export function BlueLockProvider({ children }) {
   const [diamantes, setDiamantes] = useState(DIAMANTES_INICIAIS);
   const [elenco, setElenco] = useState([]);
   const [escalacao, setEscalacao] = useState(escalacaoVazia);
-  const [slotSelecionado, setSlotSelecionado] = useState
-
-
-(null);
+  const [slotSelecionado, setSlotSelecionado] = useState(null);
   const [carregado, setCarregado] = useState(false);
 
   // Carrega o estado salvo no navegador (só depois da hidratação).
@@ -93,9 +66,7 @@ export function BlueLockProvider({ children }) {
   const gastarDiamantes = useCallback(
     (custo) => {
       if (diamantes < custo) {
-        alert(
-          `Você não possui diamantes suficientes!\nDiamantes: ${diamantes}\nCusto: ${custo}`,
-        );
+        alert(`Você não possui diamantes suficientes!\nDiamantes: ${diamantes}\nCusto: ${custo}`);
         return false;
       }
       setDiamantes((atual) => atual - custo);
