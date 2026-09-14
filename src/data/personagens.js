@@ -1,12 +1,12 @@
-export type Raridade = "Comum" | "Raro" | "Épico" | "Lendário" | "New Gen";
-export type Personagem = {
-  id: string; nome: string; raridade: Raridade; imagem: string;
-  posicoes: string[]; overall: number;
-  atributos: { ataque: number; tecnica: number; velocidade: number; visao: number };
-  qualidades: string[];
-};
+ 
 
-export const personagens: Personagem[] = [
+
+
+
+
+
+
+export const personagens = [
 
     // =====================================================
     // PERSONAGENS COMUNS

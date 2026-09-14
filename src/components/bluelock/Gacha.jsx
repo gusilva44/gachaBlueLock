@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 import { useBlueLock } from "@/context/BlueLockContext";
-import { personagens, type Personagem } from "@/data/personagens";
+import { personagens, } from "@/data/personagens";
 import {
   CUSTO_ROLETA_1,
   CUSTO_ROLETA_10,
@@ -22,20 +22,20 @@ const raridades = [
 export function Gacha() {
   const { diamantes, gastarDiamantes, adicionarAoElenco } = useBlueLock();
 
-  const [carta, setCarta] = useState<Personagem>(personagens[0]!);
+  const [carta, setCarta] = useState(personagens[0]);
   const [finalizado, setFinalizado] = useState(true);
-  const [nomesPassando, setNomesPassando] = useState<string[]>([]);
-  const [resultadosX10, setResultadosX10] = useState<Personagem[] | null>(null);
+  const [nomesPassando, setNomesPassando] = useState([]);
+  const [resultadosX10, setResultadosX10] = useState(null);
   const [rolando, setRolando] = useState(false);
 
   const rolandoRef = useRef(false);
 
   /** Reproduz a animação de troca rápida de imagens/nomes da versão original. */
-  const animar = async (personagemFinal: Personagem) => {
+  const animar = async (personagemFinal) => {
     setFinalizado(false);
 
     for (let contador = 0; contador < 20; contador++) {
-      const aleatorio = personagens[Math.floor(Math.random() * personagens.length)]!;
+      const aleatorio = personagens[Math.floor(Math.random() * personagens.length)];
       setCarta(aleatorio);
       setNomesPassando([aleatorio.nome, personagemFinal.nome]);
       await esperar(10 + contador * 2);
