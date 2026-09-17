@@ -1,8 +1,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 
+import { useAuth } from "@/context/AuthContext";
+import { api } from "@/lib/api";
 import {
   CHAVE_DIAMANTES,
-  CHAVE_ELENCO,
   CHAVE_ESCALACAO,
   DIAMANTES_INICIAIS,
   escalacaoVazia,
@@ -13,39 +14,23 @@ import {
 const BlueLockContext = createContext(null);
 
 export function BlueLockProvider({ children }) {
+  const { logado, token, usuario, abrirLogin } = useAuth();
+
   const [diamantes, setDiamantes] = useState(DIAMANTES_INICIAIS);
   const [elenco, setElenco] = useState([]);
   const [escalacao, setEscalacao] = useState(escalacaoVazia);
   const [slotSelecionado, setSlotSelecionado] = useState(null);
   const [carregado, setCarregado] = useState(false);
 
-  // Carrega o estado salvo no navegador (só depois da hidratação).
+  const chaveEscalacao = usuario ? `${CHAVE_ESCALACAO}:${usuario.id_user}` : CHAVE_ESCALACAO;
+
+  /** Diamantes continuam salvos no navegador. */
   useEffect(() => {
     try {
-      const diamantesSalvos = localStorage.getItem(CHAVE_DIAMANTES);
-      if (diamantesSalvos !== null && Number.isFinite(Number(diamantesSalvos))) {
-        setDiamantes(Number(diamantesSalvos));
-      }
-
-      const elencoSalvo = localStorage.getItem(CHAVE_ELENCO);
-      if (elencoSalvo) {
-        const dados = JSON.parse(elencoSalvo);
-        if (Array.isArray(dados)) setElenco(dados);
-      }
-
-      const escalacaoSalva = localStorage.getItem(CHAVE_ESCALACAO);
-      if (escalacaoSalva) {
-        const dados = JSON.parse(escalacaoSalva);
-        if (dados && typeof dados === "object") {
-          const base = escalacaoVazia();
-          for (const slot of SLOTS) {
-            base[slot.id] = dados[slot.id] ?? null;
-          }
-          setEscalacao(base);
-        }
-      }
+      const salvos = localStorage.getItem(CHAVE_DIAMANTES);
+      if (salvos !== null && Number.isFinite(Number(salvos))) setDiamantes(Number(salvos));
     } catch (erro) {
-      console.error("Erro ao carregar o estado salvo:", erro);
+      console.error("Erro ao carregar os diamantes:", erro);
     } finally {
       setCarregado(true);
     }
@@ -55,38 +40,105 @@ export function BlueLockProvider({ children }) {
     if (carregado) localStorage.setItem(CHAVE_DIAMANTES, String(diamantes));
   }, [diamantes, carregado]);
 
+  /** O elenco vem do banco de dados do usuário logado. */
   useEffect(() => {
-    if (carregado) localStorage.setItem(CHAVE_ELENCO, JSON.stringify(elenco));
-  }, [elenco, carregado]);
+    if (!logado || !token) {
+      setElenco([]);
+      return;
+    }
+
+    let ativo = true;
+
+    api
+      .elenco(token)
+      .then((dados) => {
+        if (ativo) setElenco(dados.elenco ?? []);
+      })
+      .catch((erro) => console.error("Erro ao carregar o elenco:", erro));
+
+    return () => {
+      ativo = false;
+    };
+  }, [logado, token]);
+
+  /** A escalação fica salva no navegador, separada por usuário. */
+  useEffect(() => {
+    try {
+      const salva = localStorage.getItem(chaveEscalacao);
+      const base = escalacaoVazia();
+
+      if (salva) {
+        const dados = JSON.parse(salva);
+        if (dados && typeof dados === "object") {
+          for (const slot of SLOTS) base[slot.id] = dados[slot.id] ?? null;
+        }
+      }
+
+      setEscalacao(base);
+      setSlotSelecionado(null);
+    } catch (erro) {
+      console.error("Erro ao carregar a escalação:", erro);
+    }
+  }, [chaveEscalacao]);
 
   useEffect(() => {
-    if (carregado) localStorage.setItem(CHAVE_ESCALACAO, JSON.stringify(escalacao));
-  }, [escalacao, carregado]);
+    if (carregado) localStorage.setItem(chaveEscalacao, JSON.stringify(escalacao));
+  }, [escalacao, chaveEscalacao, carregado]);
+
+  /** Bloqueia quem não está logado e abre a tela de login. */
+  const exigirLogin = useCallback(() => {
+    if (logado) return true;
+    abrirLogin();
+    return false;
+  }, [logado, abrirLogin]);
 
   const gastarDiamantes = useCallback(
     (custo) => {
+      if (!exigirLogin()) return false;
+
       if (diamantes < custo) {
         alert(`Você não possui diamantes suficientes!\nDiamantes: ${diamantes}\nCusto: ${custo}`);
         return false;
       }
+
       setDiamantes((atual) => atual - custo);
       return true;
     },
-    [diamantes],
+    [diamantes, exigirLogin],
   );
 
-  const adicionarAoElenco = useCallback((personagem) => {
-    setElenco((atual) =>
-      atual.some((jogador) => jogador.id === personagem.id) ? atual : [...atual, personagem],
-    );
-  }, []);
+  /** Salva o jogador ganhado no banco e no elenco da tela. */
+  const adicionarAoElenco = useCallback(
+    async (personagem) => {
+      if (!logado || !token) return;
 
-  const selecionarSlot = useCallback((slot, posicao) => {
-    setSlotSelecionado({ slot, posicao });
-  }, []);
+      try {
+        const dados = await api.ganharJogador(personagem.id, token);
+        const jogador = dados.jogador ?? personagem;
+
+        setElenco((atual) =>
+          atual.some((item) => item.id === jogador.id) ? atual : [jogador, ...atual],
+        );
+      } catch (erro) {
+        console.error("Erro ao salvar o jogador ganhado:", erro);
+        alert(erro.message);
+      }
+    },
+    [logado, token],
+  );
+
+  const selecionarSlot = useCallback(
+    (slot, posicao) => {
+      if (!exigirLogin()) return;
+      setSlotSelecionado({ slot, posicao });
+    },
+    [exigirLogin],
+  );
 
   const colocarNoTime = useCallback(
     (jogador) => {
+      if (!exigirLogin()) return;
+
       if (!slotSelecionado) {
         alert("Primeiro escolha uma posição no campo.");
         return;
@@ -105,7 +157,7 @@ export function BlueLockProvider({ children }) {
       setEscalacao((atual) => ({ ...atual, [slotSelecionado.slot]: jogador }));
       setSlotSelecionado(null);
     },
-    [escalacao, slotSelecionado],
+    [escalacao, slotSelecionado, exigirLogin],
   );
 
   const removerDoSlot = useCallback((slot) => {
@@ -123,6 +175,7 @@ export function BlueLockProvider({ children }) {
       elenco,
       escalacao,
       slotSelecionado,
+      logado,
       gastarDiamantes,
       adicionarAoElenco,
       selecionarSlot,
@@ -135,6 +188,7 @@ export function BlueLockProvider({ children }) {
       elenco,
       escalacao,
       slotSelecionado,
+      logado,
       gastarDiamantes,
       adicionarAoElenco,
       selecionarSlot,

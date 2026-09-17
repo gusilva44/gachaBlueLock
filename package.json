@@ -1,0 +1,8 @@
+{
+  "name": "bluelock-projeto",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && node_modules/.bin/vite dev",
+    "build": "cd frontend && node_modules/.bin/vite build"
+  }
+}

@@ -15,8 +15,15 @@ const filtros = [
 ];
 
 export function MonteSeuTime() {
-  const { elenco, escalacao, slotSelecionado, selecionarSlot, colocarNoTime, limparEscalacao } =
-    useBlueLock();
+  const {
+    elenco,
+    escalacao,
+    slotSelecionado,
+    logado,
+    selecionarSlot,
+    colocarNoTime,
+    limparEscalacao,
+  } = useBlueLock();
 
   const [busca, setBusca] = useState("");
   const [filtro, setFiltro] = useState("todos");
@@ -94,7 +101,9 @@ export function MonteSeuTime() {
           <div className="players-list">
             {elenco.length === 0 ? (
               <p className="mt-empty-elenco">
-                Role a roleta em DIAMANTES BRUTOS para ganhar jogadores.
+                {logado
+                  ? "Role a roleta em DIAMANTES BRUTOS para ganhar jogadores."
+                  : "Entre na sua conta para roletar e montar seu time."}
               </p>
             ) : (
               visiveis.map((jogador) => (
