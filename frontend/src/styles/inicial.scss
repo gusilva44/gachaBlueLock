@@ -4308,3 +4308,157 @@ body {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* ===================== LOGIN / CADASTRO ===================== */
+.nav-usuario {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  strong {
+    font-family: "Rajdhani", sans-serif;
+    color: #7fd4ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.nav-auth {
+  background: none;
+  border: 1px solid rgba(127, 212, 255, 0.6);
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+
+  &:hover {
+    background: rgba(127, 212, 255, 0.15);
+  }
+}
+
+.aviso-login {
+  font-family: "Rajdhani", sans-serif;
+  color: #ffd166;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 8px 0 4px;
+}
+
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(2, 8, 20, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.auth-modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 28px;
+  border: 1px solid rgba(127, 212, 255, 0.35);
+  border-radius: 10px;
+  background: linear-gradient(160deg, #06121f 0%, #0b2036 100%);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+  color: #eaf6ff;
+
+  h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin: 4px 0 6px;
+  }
+}
+
+.auth-tag {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #7fd4ff;
+}
+
+.auth-sub {
+  font-family: "Rajdhani", sans-serif;
+  color: rgba(234, 246, 255, 0.7);
+  margin-bottom: 18px;
+}
+
+.auth-fechar {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #eaf6ff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+
+  label {
+    display: grid;
+    gap: 6px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #7fd4ff;
+  }
+
+  input {
+    padding: 11px 12px;
+    border: 1px solid rgba(127, 212, 255, 0.3);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    color: #fff;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 16px;
+
+    &:focus {
+      outline: none;
+      border-color: #7fd4ff;
+    }
+  }
+}
+
+.auth-erro {
+  font-family: "Rajdhani", sans-serif;
+  color: #ff7b7b;
+}
+
+.auth-enviar {
+  margin-top: 4px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #1b6fff, #7fd4ff);
+  color: #04121f;
+  font-family: "Anton", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.auth-alternar {
+  margin-top: 16px;
+  background: none;
+  border: none;
+  color: #7fd4ff;
+  font-family: "Rajdhani", sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+}

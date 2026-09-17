@@ -19,7 +19,7 @@ const raridades = [
 ];
 
 export function Gacha() {
-  const { diamantes, gastarDiamantes, adicionarAoElenco } = useBlueLock();
+  const { diamantes, logado, gastarDiamantes, adicionarAoElenco } = useBlueLock();
 
   const [carta, setCarta] = useState(personagens[0]);
   const [finalizado, setFinalizado] = useState(true);
@@ -137,6 +137,10 @@ export function Gacha() {
         <div className="controle-gacha">
           <span>PLAYER SUMMON</span>
           <h2>SUMMON</h2>
+
+          {!logado && (
+            <p className="aviso-login">Entre na sua conta para roletar e guardar seus jogadores.</p>
+          )}
 
           <div className="diamantes">
             <span>DIAMANTES</span>
