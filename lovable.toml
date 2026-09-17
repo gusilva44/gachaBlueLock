@@ -1,2 +1,0 @@
-[run]
-dev = "cd frontend && bun run dev"
