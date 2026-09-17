@@ -1,4 +1,8 @@
+import { useAuth } from "@/context/AuthContext";
+
 export function Navbar() {
+  const { logado, usuario, abrirLogin, sair } = useAuth();
+
   return (
     <div className="Inicial">
       <div>
@@ -30,6 +34,19 @@ export function Navbar() {
           <a className="A btn-nav" href="#diamantes">
             Diamantes Brutos
           </a>
+
+          {logado ? (
+            <span className="nav-usuario">
+              <strong>{usuario?.name}</strong>
+              <button className="A nav-auth" type="button" onClick={sair}>
+                Sair
+              </button>
+            </span>
+          ) : (
+            <button className="A nav-auth" type="button" onClick={abrirLogin}>
+              Entrar
+            </button>
+          )}
         </div>
       </div>
     </div>

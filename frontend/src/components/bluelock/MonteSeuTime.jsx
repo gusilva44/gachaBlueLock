@@ -15,8 +15,15 @@ const filtros = [
 ];
 
 export function MonteSeuTime() {
-  const { elenco, escalacao, slotSelecionado, selecionarSlot, colocarNoTime, limparEscalacao } =
-    useBlueLock();
+  const {
+    elenco,
+    escalacao,
+    slotSelecionado,
+    logado,
+    selecionarSlot,
+    colocarNoTime,
+    limparEscalacao,
+  } = useBlueLock();
 
   const [busca, setBusca] = useState("");
   const [filtro, setFiltro] = useState("todos");
